@@ -1,0 +1,297 @@
+body {
+    background: url("../images/site-background.gif") no-repeat;
+    background-size: cover;
+    font-family: 'Titillium Web', sans-serif;
+    color: #afafaf;
+}
+
+::placeholder {
+    color: #afafaf;
+}
+
+input {
+    border: 0;
+}
+
+.logo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 70px;
+    opacity: 0.3;
+}
+
+.website-address a img {
+    opacity: 0.3;
+    margin-top: 30px;
+}
+
+.content-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    flex: 50%;
+    margin: 0 auto 55px auto;
+}
+
+.form-header {
+    color: #fff;
+    font-size: 2em;
+    font-weight: normal;
+    text-shadow: 2px 2px 4px #000;
+}
+
+/*------------------------------------*\
+  #GENERAL-RULES
+\*------------------------------------*/
+
+.content-column__1, .content-column__2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 40px;
+}
+
+.form-box {
+    padding: 20px;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+}
+
+.form-flex {
+    box-sizing: border-box;
+    min-width: 380px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 10px 20px 10px 20px;
+    background: #f7f7f7;
+    border-radius: 3px;
+}
+
+.button {
+    box-sizing: border-box;
+    height: 40px;
+    width: 100%;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background: #f7f7f7;
+    padding-left: 80px;
+    margin-top: 20px;
+}
+
+.button:focus, textarea[name=message]:focus {
+    outline: none;
+    border: 1px solid rgba(33,206,33,0.5);
+    border-radius: 2px;
+}
+
+input[name=username], input[name=yourname] {
+    background: url("../images/person.png") left no-repeat;
+}
+
+input[name=password], input[name=confirm-password] {
+    background: url("../images/locker.png") left no-repeat;
+}
+
+input[name=email], input[name=youremail] {
+    background: url("../images/envelope.png") left no-repeat;
+}
+
+#checkbox {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    background: #f7f7f7;
+    height: 20px;
+    width: 20px;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    cursor: pointer;
+    position: relative;
+    margin-right: 10px;
+}
+
+#checkbox:checked::after {
+    outline: none;
+    content: '';
+    background: #a1d63e;
+    width: 14px;
+    height: 14px;
+    border-radius: 2px;
+    top: 2px;
+    left: 2px;
+    position: absolute;
+}
+
+#checkbox:focus {
+    outline: none;
+}
+
+.checkbox-div {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1em;
+    margin-right: 10px;
+}
+
+.green-lg-btn:hover, .green-sm-btn:hover {
+    background: linear-gradient(#a2d73e, #3a9a00);
+}
+
+/*------------------------------------*\
+  #CONTENT-COLUMN__1
+\*------------------------------------*/
+
+select[name=location] {
+    background: url("../images/map-pointer.png") left no-repeat, url("../images/arrow.png") 95% 50% no-repeat;
+    padding-left: 80px;
+    -webkit-appearance: none;
+    color: #afafaf;
+}
+
+select[name=location] option {
+    color: #afafaf;
+}
+
+.green-lg-btn {
+    height: 40px;
+    width: 100%;
+    background: linear-gradient(#a2d73e, #80c41f);
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #000;
+    border: 1px solid #3a9a00;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 #addc54;
+    margin: 10px 0;
+}
+
+textarea[name=message] {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 20px;
+    padding: 10px 0 0 10px;
+    border: 1px solid #c6c6c6;
+    border-radius: 2px;
+    background: #f7f7f7;
+    resize: none;
+}
+
+/*------------------------------------*\
+  #CONTENT-COLUMN__2
+\*------------------------------------*/
+
+.green-sm-btn, .red-sm-btn {
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(#a2d73e, #80c41f);
+    color: #fff;
+    font-size: 1.3em;
+    text-shadow: 1px 1px 1px #000;
+    border: 1px solid #3a9a00;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 #addc54;
+    margin-top: 10px;
+}
+
+.green-sm-btn__inactive {
+    height: 40px;
+    width: 150px;
+    background: linear-gradient(#a2d73e, #80c41f);
+    color: #fff;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 1px #000;
+    border: 1px solid #3a9a00;
+    border-radius: 3px;
+    box-shadow: inset 0 1px 0 #addc54;
+    margin-top: 10px;
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+input[name=phone-number] {
+    background: url("..//images/phone.png") left no-repeat;
+}
+
+.red-sm-btn {
+    background: linear-gradient(#f55d6e, #d6303e);
+    border: 1px solid #9a000f;
+    box-shadow: inset 0 1px 0 #dc5454;
+}
+
+.red-sm-btn:hover {
+    background: linear-gradient(#f55d6e, #bc2a2a 80%);
+}
+
+.buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+/*------------------------------------*\
+  #MEDIA-QUERIES
+\*------------------------------------*/
+
+@media only screen and (max-width: 480px) {
+
+    #logo-top {
+        width: 90%;
+        height: 90%;
+    }
+
+    #logo-bot {
+        width: 80%;
+        height: 80%;
+    }
+
+    .content-column__1, .content-column__2 {
+        margin: 0;
+    }
+
+    .form-header {
+        font-size: 1.8em;
+    }
+
+    .button, select[name=location] {
+        padding-left: 65px;
+        min-width: 100%;
+    }
+
+    .form-flex {
+        min-width: auto;
+    }
+
+    .form-box {
+        width: 80%;
+    }
+
+    .buttons, .green-lg-btn, textarea[name=message], .green-sm-btn, .green-sm-btn__inactive, .red-sm-btn {
+        width: 100%;
+    }
+
+    label {
+        font-size: 0.9em;
+    }
+
+    ::placeholder, select[name=location] option, #xx {
+        font-size: 0.8em;
+    }
+
+    #checkbox:checked::after {
+        width: 70%;
+        height: 70%;
+    }
+}
+
+
+
+
