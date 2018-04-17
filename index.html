@@ -11,94 +11,103 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
 </head>
 <body>
-<header>
-    <div class="logo">
-        <img id="logo-top" src="images/logo-top.png" alt="Masteralb creative">
-    </div>
-</header>
-<main class="content-wrapper">
-    <section class="content-column__1">
-        <h1 class="form-header">Register Form</h1>
-        <div class="form-box">
-            <form class="form-flex">
-                <input class="button" type="text" name="username" placeholder="Username" required>
-                <input class="button" type="password" name="password" placeholder="Password" required>
-                <input class="button" type="password" name="confirm-password" placeholder="Confirm password" required>
-                <input class="button" type="email" name="email" placeholder="Email" required>
-                <select class="button" name="location" title="Wybierz element z listy..." required>
-                    <option id="xx" value="Your location" disabled selected hidden>Your location</option>
-                    <option value="Location 1">Location 1</option>
-                    <option value="Location 2">Location 2</option>
-                    <option value="Location 3">Location 3</option>
-                    <option value="Location 4">Location 4</option>
-                    <option value="Location 5">Location 5</option>
-                </select>
-                <div class="checkbox-div">
-                    <input id="checkbox" type="checkbox" required>
-                    <label for="checkbox">I have read and accept the terms of use</label>
-                </div>
-                <input class="green-lg-btn" type="submit" value="Sign up">
-            </form>
+    <header>
+        <!--------- Logo-top ---------->
+        <div class="logo">
+            <img id="logo-top" src="images/logo-top.png" alt="Masteralb creative">
         </div>
-        <h1 class="form-header">Send Email</h1>
-        <div class="form-box">
-            <form class="form-flex">
-                <input class="button" type="text" name="yourname" placeholder="Your name" required>
-                <input class="button" type="email" name="youremail" placeholder="Your email" required>
-                <textarea name="message" placeholder="Type your message..." cols="45" rows="12" required></textarea>
-                <div class="checkbox-div">
-                    <input id="checkbox" type="checkbox" required>
-                    <label for="checkbox">Send a copy to my Email</label>
-                </div>
-                <input class="green-lg-btn" type="submit" value="Send Email">
-            </form>
-        </div>
-        <div class="form email-form">
-        </div>
-    </section>
-    <section class="content-column__2">
-        <h1 class="form-header">Sign In Form</h1>
-        <div class="form-box">
-            <form class="form-flex">
-                <input class="button" type="text" name="yourname" placeholder="Your name" required>
-                <input class="button" type="password" name="password" placeholder="Password" required>
-                <div class="buttons">
+    </header>
+    <main class="content-wrapper">
+        <!--------- COLUMN 1 ---------->
+        <section class="content-column__1">
+            <!--------- Register Form ---------->
+            <h1 class="form-header">Register Form</h1>
+            <div class="form-box-black">
+                <form class="form-box-white">
+                    <input class="button" type="text" name="username" placeholder="Username" required>
+                    <input class="button" type="password" name="password" placeholder="Password" required>
+                    <input class="button" type="password" name="confirm-password" placeholder="Confirm password" required>
+                    <input class="button" type="email" name="email" placeholder="Email" required>
+                    <select class="button" name="location" title="Wybierz element z listy..." required>
+                        <option id="xx" value="Your location" disabled selected hidden>Your location</option>
+                        <option value="Location 1">Location 1</option>
+                        <option value="Location 2">Location 2</option>
+                        <option value="Location 3">Location 3</option>
+                        <option value="Location 4">Location 4</option>
+                        <option value="Location 5">Location 5</option>
+                    </select>
                     <div class="checkbox-div">
                         <input id="checkbox" type="checkbox" required>
-                        <label for="checkbox">Remember me</label>
+                        <label for="checkbox">I have read and accept the terms of use</label>
                     </div>
-                    <input class="green-sm-btn" type="submit" value="Sign In">
-                </div>
-            </form>
-        </div>
-        <h1 class="form-header">Recover Form</h1>
-        <div class="form-box">
-            <form class="form-flex">
-                <input class="button" type="email" name="email" placeholder="Enter your Email" required>
-                <input class="button" type="text" name="phone-number" placeholder="Enter your Phone Number" required>
-                <div class="buttons">
-                    <input class="green-sm-btn" type="submit" value="Send">
-                    <input class="green-sm-btn__inactive" type="submit" value="Done" disabled>
-                </div>
-            </form>
-        </div>
-        <h1 class="form-header">Subscribe Form</h1>
-        <div class="form-box">
-            <form class="form-flex">
-                <input class="button" type="email" name="email" placeholder="Enter your Email" required>
-                <div class="buttons">
-                    <input class="green-sm-btn" type="submit" value="Send">
-                    <input class="red-sm-btn" type="submit" value="No, Thanks">
-                </div>
-            </form>
-        </div>
-        <div class="logo">
-            <img id="logo-bot" src="images/logo-bottom.png" alt="Masteralb creative">
-        </div>
-        <div class="website-address">
-            <a href="#"><img src="images/website-address.png"></a>
-        </div>
-    </section>
-</main>
+                    <input class="green-lg-btn" type="submit" value="Sign up">
+                </form>
+            </div>
+            <!--------- Send Email Form ---------->
+            <h1 class="form-header">Send Email</h1>
+            <div class="form-box-black">
+                <form class="form-box-white">
+                    <input class="button" type="text" name="yourname" placeholder="Your name" required>
+                    <input class="button" type="email" name="youremail" placeholder="Your email" required>
+                    <textarea name="message" placeholder="Type your message..." cols="45" rows="12" required></textarea>
+                    <div class="checkbox-div">
+                        <input id="checkbox" type="checkbox" required>
+                        <label for="checkbox">Send a copy to my Email</label>
+                    </div>
+                    <input class="green-lg-btn" type="submit" value="Send Email">
+                </form>
+            </div>
+            <div class="form email-form">
+            </div>
+        </section>
+        <!--------- COLUMN 2 ---------->
+        <section class="content-column__2">
+            <!--------- Sign In Form ---------->
+            <h1 class="form-header">Sign In Form</h1>
+            <div class="form-box-black">
+                <form class="form-box-white">
+                    <input class="button" type="text" name="yourname" placeholder="Your name" required>
+                    <input class="button" type="password" name="password" placeholder="Password" required>
+                    <div class="buttons">
+                        <div class="checkbox-div">
+                            <input id="checkbox" type="checkbox" required>
+                            <label for="checkbox">Remember me</label>
+                        </div>
+                        <input class="green-sm-btn" type="submit" value="Sign In">
+                    </div>
+                </form>
+            </div>
+            <!--------- Recover Form ---------->
+            <h1 class="form-header">Recover Form</h1>
+            <div class="form-box-black">
+                <form class="form-box-white">
+                    <input class="button" type="email" name="email" placeholder="Enter your Email" required>
+                    <input class="button" type="text" name="phone-number" placeholder="Enter your Phone Number" required>
+                    <div class="buttons">
+                        <input class="green-sm-btn" type="submit" value="Send">
+                        <input class="green-sm-btn__inactive" type="submit" value="Done" disabled>
+                    </div>
+                </form>
+            </div>
+            <!--------- Subscribe Form ---------->
+            <h1 class="form-header">Subscribe Form</h1>
+            <div class="form-box-black">
+                <form class="form-box-white">
+                    <input class="button" type="email" name="email" placeholder="Enter your Email" required>
+                    <div class="buttons">
+                        <input class="green-sm-btn" type="submit" value="Send">
+                        <input class="red-sm-btn" type="submit" value="No, Thanks">
+                    </div>
+                </form>
+            </div>
+            <!--------- Logo-bot ---------->
+            <div class="logo">
+                <img id="logo-bot" src="images/logo-bottom.png" alt="Masteralb creative">
+            </div>
+            <div class="website-address">
+                <a href="#"><img src="images/website-address.png"></a>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
